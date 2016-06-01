@@ -1,0 +1,45 @@
+
+			
+<div id="welcome" class="container">
+    <div class="row">
+        <section>
+            <header>
+                <h2>Mesh Connection Simulation</h2>
+            </header>
+            <div id="meshExplanation" style="text-align: left;">
+            <p>Mesh in networking is a communication network formed by nearby nodes of radio devices. Normally mesh will be an ad-hoc network, where the network is formed dynamically based on the nodes that are available nearby and the their resources. Since they are dynamic, they should still work when one node becomes unavailable. So a mesh network is something that will always keep changing.</p>
+            </br>
+            <p>In a mesh network the connection manager (coordinator) device, first searches for the nodes that are within its reach and it initiates the connection to these nearby nodes. Once a connection is established, it will mark down all these nearby nodes and will ask them to continue mapping rest of the devices on the network. This way every node knows who it’s connected to. If we combine the information of all the nodes we will end up with the complete information about the mesh network.</p>
+            </br>
+            <p>The following is a game, where we can add the nodes that we need in a dynamic fashion, and based on the relative closeness,
+                they will be linked to one another, similar to how the protocol will work.</p>
+            <p>In our simulation we have 3 kinds of devices
+            </br>
+            1)	Coordinator(Red color): the device which begins the connection formation request.
+            </br>
+            2)	Router (Blue color): A device which has the capacity to form new connections. So these devices will be able to connect to more devise and thus extend the network.
+            </br>
+            3)	End Device(Black color): A device which cannot connect to other devices. So when a connection comes to this node, it is the end in that line of chain of connections.</p>
+
+            <p>In our simulation we can add all these 3 kinds of devices based on the device type and their proximity to one another the connection type will vary accordingly. </p>
+            </div>
+
+        </section>
+
+        <section id="sProtocolGame" style="margin-left:auto; margin-right:auto; width: 100%;">
+            <div>
+                <canvas id="gameCanvas"  onclick="drawAvatar();"  width="400" height="400" style="border: 1px solid black;"></canvas>
+                <div>
+                <button id="AddRouterNodes" onclick="ChangeRouterNodes()" type="button">Add Router</button>
+                <button id="AddEndNodes" onclick="ChangeEndNodes()" type="button">Add End Device</button>
+                <button id="linkNodes" onclick="linkNodes()" type="button">Link</button>
+            </div>
+            </div>
+
+
+
+        </section>
+    </div>
+</div>
+
+		
