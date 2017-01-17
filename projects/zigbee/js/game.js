@@ -100,7 +100,7 @@ function linkNodes(){
 			nodeArray[i].connectionAchived = true;
 			// Write down the distance of the slave to its master
 			c.font="10px Georgia";
-			c.fillStyle = 'orange';
+			c.fillStyle = 'blue';
     		c.fillText("("+float2int(distance)+")",nodeArray[i].xAxis-15,nodeArray[i].yAxis-10);
 			// Minimum of one device must be connected to the co-ordinator node1
 			minConnection = true;
@@ -126,7 +126,7 @@ function linkNodes(){
 						nodeArray[j].linkedToMaster=true;
 						nodeArray[j].rootName = nodeArray[i].name;
 						c.font="10px Georgia";
-						c.fillStyle = 'orange';
+						c.fillStyle = 'blue';
 			    		c.fillText("("+float2int(distance)+")",nodeArray[j].xAxis-15,nodeArray[j].yAxis-10);
 					}
 				}	
@@ -150,7 +150,7 @@ function linkNodes(){
 							nodeArray[i].linkedToMaster=true;
 							nodeArray[i].rootName = nodeArray[j].name;
 							c.font="10px Georgia";
-							c.fillStyle = 'orange';
+							c.fillStyle = 'blue';
 				    		c.fillText("("+float2int(distance)+")",nodeArray[i].xAxis-15,nodeArray[i].yAxis-10);
 						}
 					}	
